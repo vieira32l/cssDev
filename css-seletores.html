@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 Seletores</title>
+    <style>
+
+        .fundo {
+            background-color: royalblue;
+        }
+
+        /* Seletor CSS por elemento HTML(tag) */
+        h4 {
+            text-align: center;
+            color: red;
+        }
+
+        /* Seletor CSS por id */
+        #paragrafo6 {
+            text-align: center;
+            color: red;
+        }
+
+        /* Seletor CSS por classe */
+        .centralizar {
+            text-align: center;
+            color: red;
+        }
+
+        /* Seletor CSS por classe com um elemento específico */
+        h4.centralizar {
+            text-align: center;
+            color: blue;
+        }
+
+        /* Seletor CSS Universal */
+        * {
+            border-style: solid;
+            border-width: 1px;
+        }
+
+        /*Seletor CSS agrupado*/
+        h1, h3, h5 {
+            text-align: right;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h2>CSS Seletores</h2>
+    <p>Seletores CSS são utilizados para achar ou selecionar elementos HTML que você queira estilizar.</p>
+    <p>Podemos dividir seletores CSS em 5 categorias:</p>
+    <p>
+        <ul>
+            <li><strong>Seletores Simples:</strong> Seleciona o elemento baseado num nome, id ou classe.</li>
+            <li><strong>Seletores Combinados:</strong> Seleciona elementos baseados em uma relação específica entre eles.</li>
+            <li><strong>Seletores de Pseudo-Classe:</strong> Seleciona elementos baseados em um certo estado.</li>
+            <li><strong>Seletores de Pseudo-Elemento:</strong> Seleciona e estiliza parte de um elemento.</li>
+            <li><strong>Seletores de Atributo:</strong> Seleciona elementos baseados em um atributo ou atributo de valor.</li>
+        </ul>
+    </p>
+    <h2>O seletor CSS por elemento HTML(tag)</h2>
+    <p>O seletor de elementos HTML é baseado no nome do elemento.<br><br><small><i>Logo abaixo você verá que todos os elementos com a tag  &lt;h4&gt; ficaram centralizados e com a cor vermelha:</i></small></p>
+    <h4>Esse é um elemento HTML estilizado com CSS</h4>
+    <h2>O seletor CSS por ID</h2>
+    <p>O seletor por id usa o atributo HTML id dentro de um elemento para identificar um elemento específico.<br>O id de um elemento é único em uma página, por isso ele deve ser usado para identificar um único elemento apena!<br>Para selecionar um elemento utilizando seu id específico usamos o hash(jogo da velha, #) seguido pelo nome do id.<br><br><small><i>Logo abaixo você verá que o elemento identificado pelo id #paragrafo6 fica centralizado e com a cor vermelha:</i></small></p>
+    <p id="paragrafo6">Esse é um elemento HTML estilizado com CSS</p>
+    <small><strong>Nota:</strong> O id não pode ser nomeado começando por um número.</small>
+    <h2>O seletor CSS por Classe</h2>
+    <p>O seletor por CSS por classe seleciona um ou vários elementos HTML que estão utilizando o atributo class.<br>Para selecionar elementos com uma classe específica, escreva um ponto (.) seguido pelo nome da classe.<br><br><small><i>Logo abaixo você verá que todos os elementos com a classe .centralizar ficaram centralizados e com a cor vermelha:</i></small></p>
+    <p class="centralizar">Esse é um elemento HTML estilizado com CSS</p>
+    <p>Você também pode especificar um único elemento que deva ser afetado pela classe. Para fazer isso é necessário colocar o elemento seguido de ponto(.) e o nome da classe. Exemplo: "h4.centralizar".</p>
+    <h4 class="centralizar">Esse é um elemento HTML estilizado com CSS</h4>
+    <p>Os elementos HTML também podem compor mais de uma classe.</p>
+    <p class="centralizar fundo">Esse paragrafo possui duas classes.</p>
+    <small><strong>Nota:</strong> O nome de uma classe não pode ser começando por um número.</small>
+    <h2>O seletor CSS Universal</h2>
+    <p>O seletor CSS universal utiliza o caractere(*) para selecionar todos os elementos de uma página.<br><br><small><i>Toda essa página está com todos os elementos estilizados universalmente com uma borda.</i></small></p>
+    <h2>O seletor CSS agrupado</h2>
+    <p>O seletor CSS agrupado seleciona toos os elementos HTML como as mesmas definições de estilo.</p>
+    <p>Por exemplo, caso você tenha 3 tags HTML estilizadas exatamente da mesma maneira seria melhor definir esse estilo uma única vez.<br><br><small><i>Esse exemplo encontra-se no código fonte desta página.</i></small></p>
+</body>
+</html>
